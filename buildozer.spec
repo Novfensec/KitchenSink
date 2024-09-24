@@ -21,8 +21,12 @@ presplash.filename = %(source.dir)s/assets/images/presplash.png
 # (str) Icon of the application
 icon.filename = %(source.dir)s/assets/images/favicon.png
 
-# (string) Presplash background color (for new android toolchain)
-android.presplash_color = #000000
+# (string) Presplash background color (for android toolchain)
+# Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
+# red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
+# darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
+# olive, purple, silver, teal.
+android.presplash_color = white
 
 # (list) Source files to include (let empty to include all the files)
 source.include_exts = py, gif, png, jpg, jpeg, ttf, kv, json, txt, md
