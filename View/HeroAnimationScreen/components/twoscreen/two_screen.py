@@ -1,5 +1,4 @@
 from kivy.metrics import dp
-
 from kivymd.uix.fitimage import FitImage
 from kivymd.uix.screen import MDScreen
 
@@ -23,3 +22,4 @@ class TwoScreenView(MDScreen):
 
     def on_tap_button_close(self) -> None:
         self.manager.current = "hero one screen"
+        self.ids.hero_to.tag = ""

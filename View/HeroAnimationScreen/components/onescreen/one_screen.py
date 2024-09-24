@@ -24,7 +24,9 @@ class OneScreenView(MDScreen):
 
     def on_tap_city_card(self, tile: MDSmartTile) -> None:
         def switch_screen(*args):
-            self.manager.current_hero = tile.parent.tag
+            if self.ids :
+                print(self.ids)
+            self.manager.current_heroes = [tile.parent.tag]
             self.manager.current = "hero two screen"
 
         Clock.schedule_once(switch_screen, 0.1)

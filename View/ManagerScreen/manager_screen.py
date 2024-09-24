@@ -4,24 +4,24 @@ from kivy.clock import Clock
 from kivy.lang import Builder
 from kivy.uix.image import Image
 from kivy.uix.modalview import ModalView
-from kivy.uix.screenmanager import ScreenManager, NoTransition
+from kivymd.uix.screenmanager import MDScreenManager
+from kivymd.uix.transition import MDFadeSlideTransition
 from kivy.utils import get_color_from_hex
 
 from kivymd.app import MDApp
 from kivymd.utils.set_bars_colors import set_bars_colors
-from kivymd.color_definitions import colors
 
 from View.screens import screens
 
 
-class ManagerScreen(ScreenManager):
+class ManagerScreen(MDScreenManager):
     dialog_wait = None
     _screen_names = []
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.app = MDApp.get_running_app()
-        self.transition = NoTransition()
+        self.transition = MDFadeSlideTransition()
 
     def on_current(self, *args):
         super().on_current(*args)
@@ -53,8 +53,8 @@ class ManagerScreen(ScreenManager):
                 "navigation_icon_color": "Light",
             },
             "button_1": {
-                "status_bar_color": get_color_from_hex(colors["Green"]["800"]),
-                "navigation_bar_color": get_color_from_hex(colors["Green"]["800"]),
+                "status_bar_color": get_color_from_hex("#008000"),
+                "navigation_bar_color": get_color_from_hex("#008000"),
                 "navigation_icon_color": "Light",
             },
             "field": {

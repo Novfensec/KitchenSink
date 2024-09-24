@@ -19,7 +19,7 @@ source.include_patterns = assets/*
 presplash.filename = %(source.dir)s/assets/images/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/assets/images/logo.png
+icon.filename = %(source.dir)s/assets/images/favicon.png
 
 # (string) Presplash background color (for new android toolchain)
 android.presplash_color = #000000
@@ -33,13 +33,14 @@ source.include_exts = py, gif, png, jpg, jpeg, ttf, kv, json, txt, md
 # android.enable_androidx = True
 
 # (str) Application versioning (method 2)
-version = 0.0.1
+version = 1.1.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3, kivy==master, https://github.com/kivymd/KivyMD/archive/master.zip
+requirements = python3, kivy==2.3.0, kivymd==1.1.1, pillow==10.3.0, olefile
 
-# (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
+# (list) Supported orientations
+# Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
 orientation = portrait
 
 # (bool) Indicate if the application should be fullscreen or not
@@ -62,7 +63,7 @@ android.accept_sdk_license = True
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.archs = armeabi-v7a, arm64-v8a
 
-# android.release_artifact = apk
+# android.release_artifact = aab
 
 # (str) python-for-android branch to use, defaults to master
 # p4a.branch = develop
