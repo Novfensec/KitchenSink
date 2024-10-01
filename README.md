@@ -2,7 +2,7 @@
 
 ## A Demo application showcasing [KivyMD](https://github.com/kivymd/KivyMD) library Widgets and UI components.
 
-[![APK build](https://github.com/Novfensec/KitchenSink/actions/workflows/main.yml/badge.svg)](https://github.com/kivymd/KitchenSink/actions/workflows/main.yml)
+[![APK build](https://github.com/Novfensec/KitchenSink/actions/workflows/main.yml/badge.svg)](https://github.com/Novfensec/KitchenSink/actions/workflows/main.yml)
 ![KivyMD](https://img.shields.io/badge/KivyMD-1.1.1-blue)
 ![Kivy](https://img.shields.io/badge/Kivy-2.3.0-green)
 
