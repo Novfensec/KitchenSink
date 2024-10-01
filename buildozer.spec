@@ -70,7 +70,7 @@ android.archs = armeabi-v7a, arm64-v8a
 # android.release_artifact = aab
 
 # (str) python-for-android branch to use, defaults to master
-p4a.branch = stable
+p4a.branch = develop
 
 [buildozer]
 
