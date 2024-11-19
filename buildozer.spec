@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = KitchenSink
+title = Kitchen Sink
 
 # (str) Package name
 package.name = kitchensink
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.kivymd
+package.domain = org.kivymd.kitchensink
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -51,7 +51,7 @@ orientation = portrait
 fullscreen = 0
 
 # (int) Target Android API, should be as high as possible.
-# android.api = 31
+android.api = 35
 
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
@@ -67,10 +67,10 @@ android.accept_sdk_license = True
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.archs = armeabi-v7a, arm64-v8a
 
-# android.release_artifact = aab
+android.release_artifact = aab
 
 # (str) python-for-android branch to use, defaults to master
-# p4a.branch = develop
+p4a.branch = develop
 
 [buildozer]
 
