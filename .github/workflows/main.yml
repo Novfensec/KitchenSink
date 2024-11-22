@@ -25,12 +25,12 @@ jobs:
       - name: Cache Buildozer global directory
         uses: actions/cache@v4
         with:
-          path: .buildozer_global
+          path: ~/.buildozer_global
           key: buildozer-global-${{ hashFiles('buildozer.spec') }}
 
       - uses: actions/cache@v4
         with:
-          path: .buildozer
+          path: ~/.buildozer
           key: ${{ runner.os }}-${{ steps.get-date.outputs.date }}-${{ hashFiles('buildozer.spec') }}
 
       - name: Cache Android SDK
@@ -44,7 +44,7 @@ jobs:
       - name: Cache Android NDK
         uses: actions/cache@v4
         with:
-          path: ~/.buildozer/android/platform/android-ndk
+          path: ~/.buildozer/android/platform/android-ndk-r25b
           key: ${{ runner.os }}-android-ndk-${{ steps.get-date.outputs.date }}
           restore-keys: |
             ${{ runner.os }}-android-ndk-
