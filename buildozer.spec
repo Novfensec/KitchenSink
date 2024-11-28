@@ -37,7 +37,7 @@ source.include_exts = py, gif, png, jpg, jpeg, ttf, kv, json, txt, md
 # android.enable_androidx = True
 
 # (str) Application versioning (method 2)
-version = 1.1.1
+version = 1.1.2
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
