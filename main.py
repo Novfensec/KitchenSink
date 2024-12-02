@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 import kivy
-kivy.require("2.2.0")
+kivy.require("2.3.0")
 
 from kivy.core.window import Window
 
