@@ -11,7 +11,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/kivymd/KitchenSink)](https://github.com/kivymd/KitchenSink/issues)
 [![GitHub license](https://img.shields.io/github/license/kivymd/KitchenSink)](https://github.com/kivymd/KitchenSink/blob/main/LICENSE)
 
-
 <p align="center">
     <img
         width="720" 
